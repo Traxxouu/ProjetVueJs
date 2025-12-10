@@ -2,17 +2,16 @@
 import { ref, reactive, watch } from 'vue'
 
 const firstName = ref('');
-const lastName = reactive({ value: '' });
+const lastName = ref('');
 
 watch(firstName, (newVal) => {
     console.log('Prenom : ', newVal);
 });
 
-watch(() => lastName.value, (newVal) => {
+watch(lastName, (newVal) => {
     console.log('nom : ', newVal);
 });
 </script>
-
 <template>
     <form action="">
         <input type="text" v-model="firstName" placeholder="Prénom" />
