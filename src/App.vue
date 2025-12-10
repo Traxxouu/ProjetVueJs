@@ -6,25 +6,25 @@ import Watch from './React3.vue'
 import Message from './components/Message.vue'
 import TheWelcome from './components/TheWelcome.vue'
 </script>
-
 <template>
   <header>
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <HelloWorld msg="You did it! blalblalblalbla" />
     </div>
   </header>
-
   <main>
     <TheWelcome />
     <React />
     <Prop />
     <Watch />
-    <Message />
+    
+    <!-- Pour le projet a rendre la prochaine fois 3 niveau d'alerte -->
+    <Message label="Message normal" level="normal" />
+    <Message label="Attention!!! houla c'est est un avertissement" level="warning" />
+    <Message label="Erreur !!!! AIE AIE AIE" level="error" />
   </main>
 </template>
-
 <style scoped>
 header {
   line-height: 1.5;
